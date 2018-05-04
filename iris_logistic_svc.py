@@ -24,7 +24,8 @@ def main():
 
     model_dict = {
         'kNN':KNeighborsClassifier(n_neighbors=10),
-        'linear_reg':LinearRegression(),
+        # 'linear_reg':LinearRegression(),
+        # linear_reg is not a classification model, R2 the bigger the better
         'logistic_reg':LogisticRegression(C=1e3),
         'SVC':SVC(C=1e3)
     }
@@ -38,6 +39,6 @@ main()
 
 # Results:
 # Model:kNN - Accuracy:1.0
-# Model:linear_reg - Accuracy:0.9063358327734319
+# Model:linear_reg - R2:0.9063358327734319 
 # Model:logistic_reg - Accuracy:0.98
 # Model:SVC - Accuracy:0.92
