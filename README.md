@@ -59,7 +59,7 @@ model_dict = {
 
 for model_name, model in model_dict.items():
     model.fit(X_train,y_train)
-    accuracy = model.score(X_test,y_test)
+    accuracy = model.score(X_test,y_test)  # All the classification models give the accuracy
     print('Model:{} - Accuracy:{}'.format(model_name,accuracy))
 
 # Results:
@@ -68,3 +68,15 @@ for model_name, model in model_dict.items():
 # Model:logistic_reg - Accuracy:0.98
 # Model:SVC - Accuracy:0.92
 ```
+
+-----
+
+# 4. Cross Validation
+
+![](https://github.com/davidkorea/Iris_classifier_logistic_svc/blob/master/images/cross_valid.jpg)
+
+![](https://github.com/davidkorea/Iris_classifier_logistic_svc/blob/master/images/cross_valid_eg.jpg)
+
+![](https://github.com/davidkorea/Iris_classifier_logistic_svc/blob/master/images/gridsearch.jpg)
+
+
